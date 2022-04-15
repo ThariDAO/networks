@@ -75,7 +75,7 @@ tharid init {{NODE_NAME}} --chain-id thari-test
 ```
 
 ```shell
-tharid add-genesis-account {{KEY_NAME}} 1000000000uthari
+tharid add-genesis-account {{KEY_NAME}} 10000000uthari
 ```
 
 ```shell
