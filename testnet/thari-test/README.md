@@ -72,7 +72,13 @@ or
 * Initialize node
 ```shell
 tharid init {{NODE_NAME}} --chain-id thari-test
+```
+
+```shell
 tharid add-genesis-account {{KEY_NAME}} 1000000000uthari
+```
+
+```shell
 tharid gentx {{KEY_NAME}} 10000000uthari \
 --chain-id thari-test \
 --moniker="{{VALIDATOR_NAME}}" \
@@ -83,6 +89,7 @@ tharid gentx {{KEY_NAME}} 10000000uthari \
 --security-contact="XXXXXXXX" \
 --website="XXXXXXXX"
 ```
+
 * Copy the contents of `${HOME}/.thari/config/gentx/gentx-XXXXXXXX.json`.
 * Fork the [repository](https://github.com/ThariCommunity/networks/)
 * Create a file `gentx-{{VALIDATOR_NAME}}.json` under the testnet/thari-test/gentxs folder in the forked repo, paste the copied text into the file. Find reference file gentx-examplexxxxxxxx.json in the same folder.
